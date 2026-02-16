@@ -1,0 +1,31 @@
+{
+  "name": "fynco-server",
+  "version": "1.0.0",
+  "description": "A server for the fynco application to manage and store data in the backend",
+  "homepage": "https://github.com/aviralkandpal007/fynco-server#readme",
+  "bugs": {
+    "url": "https://github.com/aviralkandpal007/fynco-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aviralkandpal007/fynco-server.git"
+  },
+  "license": "ISC",
+  "author": "Aviral Kandpal",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
