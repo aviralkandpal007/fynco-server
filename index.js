@@ -2,6 +2,8 @@
 const express = require('express');
 // dot env to load env variables from .env file
 const dotenv = require('dotenv');
+// base router to set up all routes
+const baseRouter = require('./lib/router/base_router.js');
 
 // load env variables from .env file
 dotenv.config();
@@ -10,12 +12,8 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-
-
-// define a route handler for the default home page
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+// base route for all api routes
+app.use('/api', baseRouter.getRouter());
 
 const PORT = process.env.PORT || 3000;
 
